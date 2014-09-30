@@ -1,0 +1,447 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:700,400);
+
+/*-- Standar Rules  #edf1f2    #23b7e5 --*/
+.row-fluid > .col-lg-12 > h1 {
+    font-weight: 400px;
+    color: #FFF;
+}
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+.border-top-left-corner {
+    border-radius: 4px 0px 0px 0px;
+}
+
+.border-top-right-corner {
+    border-radius: 0px 4px 0px 0px;
+}
+
+.dark {
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+/* ------------------ Nav BAr #232627  ------------------*/
+
+.navbar {
+    min-height: 79px;
+    background-color: #1c2b36;
+    color: white;
+    border-color: #23b7e5;
+    border-bottom-width: 3px;
+
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus {
+
+    color: white;
+    background: #6ab000;
+}
+
+.navbar-default .navbar-nav > li > a {
+
+    color: white;
+}
+
+.navbar-nav.navbar-right:last-child {
+    margin-right: 15px;
+}
+
+.dropdown-menu {
+
+    background: #1c2b36 !important;
+    color: white;
+}
+
+.dropdown-menu > li > a {
+    background: #1c2b36 !important;
+    color: white;
+    font-size: 13px;
+}
+
+.dropdown-menu .divider {
+    background-color: rgba(229, 229, 229, 0.29);
+}
+
+.dropdown-menu > li > a:hover {
+
+    color: #6ab000;
+    background-color: #65b688
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+
+    border-radius: 3px;
+    background-color: #65b688;
+    color: white;
+
+}
+.navbar-inverse .navbar-nav > li > a {
+
+    padding: 10px 20px 8px;
+    margin: 20px 0px 0px 7px;
+    color: white;
+    font-weight: 400;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background-color: #65b688;
+    border-radius: 3px;
+}
+
+.navbar-brand {
+
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: white !important;
+    font-size: 22px;
+    height: 100%;
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+
+    background-color: #1c2b36;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+
+    color: white;
+    background-color: #2e2e2e;
+}
+
+/* ------------------ JumboTron  ------------------*/
+
+.textojumbo {
+
+    display: inline-block;
+
+}
+
+.textojumbo > h1 {
+
+    color: white;
+
+}
+
+.jumbotron {
+
+    background-image: url('http://2.bp.blogspot.com/-Rty0GaLYszo/UA8MSwfZ6ZI/AAAAAAABBQs/Caj3nMymOTY/s1600/No-hay-nada-como-vivir-en-el-campo-junto-al-lago-paisajes-rurales-lake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-position: 0px -100px;
+    margin-top: -41px;
+
+}
+
+.content {
+
+    margin-top: 100px;
+    min-height: 500px;
+
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+
+}
+
+.productHeding {
+
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    min-height: 40px;
+}
+
+.insideImg {
+
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important
+
+}
+
+.productBottom {
+    background-color: #6ab000;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 5%;
+    min-height: 80px;
+
+}
+
+body {
+
+    color: #5a5a5a;
+    background-color: #edf1f2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+
+}
+
+.productImage > img {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.productDescription {
+    border-bottom-left-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    background-color: white;
+    text-align: center;
+    color: green;
+    min-height: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+.productDescription > a, .productHEad > a {
+    color: green;
+    font-size: 20px;
+}
+
+.headersIndex {
+
+    text-align: center;
+
+}
+
+#botonew {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    color: white;
+    bottom: 0;
+    left: 0;
+    background: #1c2b36;
+    border-color: #23b7e5;
+    border-top-width: 3px;
+    margin-top: 10px;
+
+}
+
+.formText {
+
+    background-color: rgb(224, 224, 224);
+    border: rgb(224, 224, 224);
+    text-align: center;
+
+}
+
+.btnGreen {
+
+    width: 100%;
+    background-color: #65b688;
+    border-radius: 0px;
+
+}
+
+.btnGreen:hover {
+
+    width: 100%;
+    background-color: #488864;
+    border-radius: 0px;
+
+}
+
+.centeredTitle {
+    text-align: center;
+}
+
+.align {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.glyphicon {
+    margin-right: 10px;
+}
+
+.tableData.hover {
+    cursor: pointer;
+
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    background-color: #dff0d8;
+}
+
+.datesCalendar {
+    background-color: #dff0d8;
+    box-shadow: 5px 5px 2px #888888;
+    border: 1px solid;
+    border-radius: 9px;
+    margin-bottom: 1%;
+
+}
+
+.datesCalendar:hover {
+    background-color: #C2D8B8;
+    cursor: pointer;
+}
+
+.selectedDate {
+    background-color: #91BBD3 !important;
+}
+
+.productContainer {
+
+    height: 150px;
+
+}
+
+.thumbnail {
+    background-color: white;
+    border-color: #edf1f2;
+    font-color: white;
+    padding: 6px 0px 0px 0px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border: none !important;
+    margin-bottom: 0px !important;
+    height: 100%;
+}
+
+.thumbnail > img {
+    margin-top: 20px;
+}
+
+.caption {
+
+    background-color: #65b688;
+    height: 100%;
+
+}
+
+.caption > h3 {
+    color: white;
+}
+
+.order {
+    width: 100px;
+    height: 80px;
+
+}
+
+.order > .fa {
+    letter-spacing: 10px;
+    margin-left: 9px;
+}
+
+.request {
+    width: 100px;
+    height: 80px;
+
+}
+
+.request > .fa {
+    letter-spacing: 10px;
+    margin-left: 9px;
+}
+
+table.dataTable.no-footer > thead {
+    background-color: #303436;
+    color: white;
+}
+
+.dataTables_wrapper > .row {
+    margin-bottom: 20px;
+}
+
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: transparent !important; 
+    border: solid 0px !important;
+}
+.Separator {
+
+    background-color: #f6f8f8;
+    border-bottom: 1px solid #dee5e7;
+    border-top: 1px solid #dee5e7;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #1c2b36;
+    font-size: 24px;
+}
+
+.Separator > h1,h2 {
+    margin-right: 20px;
+    margin-left: 20px;
+    
+    font-weight: 300;
+    color: #99a6ad;
+    font-size: 24px;
+}
+
+.form-control {
+
+    height: 50px;
+}
+
+.dashBoardUnit {
+    background-color: rgba(179, 223, 204, 0.91);
+    color: black;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+.dashBoardItem {
+
+    color: white;
+    background-color: rgba(179, 223, 204, 0.91);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.dashBoardWeek {
+
+    color: #23b7e5;
+    background-color: rgba(179, 223, 204, 0.91);
+    font-weight: 600;
+}
+
+.dashBoardBack {
+
+    background-color: rgba(179, 223, 204, 0.91);
+
+}
+.dashBoardValue {
+    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #99a6ad;
+    font-weight: 300;
+    font-size: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 79px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}

@@ -1,0 +1,1 @@
+/home/robert/chileagricola/app/views/offers/create.blade.php

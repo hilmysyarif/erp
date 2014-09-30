@@ -1,0 +1,21 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    helpers: tests/_support
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+modules:
+    config:
+        Db: 
+            dsn: 'mysql:host=fundacion.c38gtktuy1vw.us-east-1.rds.amazonaws.com;dbname=chileagro_test'
+            user: 'fundacion'
+            password: 'gestion123'
+            dump: 'tests/_data/dump.sql'
+            populate: true
+            cleanup: false
+        Dbh:
+            cleanup: false
