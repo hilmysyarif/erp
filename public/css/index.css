@@ -26,9 +26,9 @@
 
 .navbar {
     min-height: 79px;
-    background-color: #1c2b36;
+    background-color:white ;
     color: white;
-    border-color: #23b7e5;
+    border-color: #d32d1b;
     border-bottom-width: 3px;
 
 }
@@ -51,12 +51,12 @@
 
 .dropdown-menu {
 
-    background: #1c2b36 !important;
+    
     color: white;
 }
 
 .dropdown-menu > li > a {
-    background: #1c2b36 !important;
+    background: white !important;
     color: white;
     font-size: 13px;
 }
@@ -68,13 +68,13 @@
 .dropdown-menu > li > a:hover {
 
     color: #6ab000;
-    background-color: #65b688
+    background-color: #d32d1b
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
 
     border-radius: 3px;
-    background-color: #65b688;
+    background-color: #d32d1b;
     color: white;
 
 }
@@ -82,12 +82,12 @@
 
     padding: 10px 20px 8px;
     margin: 20px 0px 0px 7px;
-    color: white;
+    color: rgba(43, 39, 39, 0.65);
     font-weight: 400;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-    background-color: #65b688;
+    background-color: #d32d1b;
     border-radius: 3px;
 }
 
@@ -96,19 +96,19 @@
     font-weight: 700;
     margin-top: 10px;
     margin-left: 5px;
-    color: white !important;
+    color: rgba(43, 39, 39, 0.65) !important;
     font-size: 22px;
     height: 100%;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
 
-    background-color: #1c2b36;
+    background-color: rgba(43, 39, 39, 0.65);
 }
 
 .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
 
-    color: white;
+    color: rgba(43, 39, 39, 0.65);;
     background-color: #2e2e2e;
 }
 
@@ -227,7 +227,7 @@ body {
     color: white;
     bottom: 0;
     left: 0;
-    background: #1c2b36;
+    background: white;
     border-color: #23b7e5;
     border-top-width: 3px;
     margin-top: 10px;
@@ -245,7 +245,7 @@ body {
 .btnGreen {
 
     width: 100%;
-    background-color: #65b688;
+    background-color: #d32d1b;
     border-radius: 0px;
 
 }
@@ -322,7 +322,7 @@ body {
 
 .caption {
 
-    background-color: #65b688;
+    background-color: #d32d1b;
     height: 100%;
 
 }
@@ -431,8 +431,8 @@ table.dataTable.no-footer > thead {
 
 
 .sidebar {
-    position: fixed;
-    top: 79px;
+    /* position: fixed; */
+    top: -39px;
     bottom: 0;
     left: 0;
     z-index: 1000;
@@ -440,8 +440,24 @@ table.dataTable.no-footer > thead {
     padding: 20px;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #f5f5f5;
+    background-color: white;
     border-right: 1px solid #eee;
     padding-left: 0px !important;
     padding-right: 0px !important;
+}
+
+.sidebar>.nav>li>a{
+    color:rgba(43, 39, 39, 0.65);
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    border-bottom-color: rgba(0, 0, 0, 0.15);
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+.sidebar>.nav>li>a:hover{
+    color:white;
+    background-color: #d32d1b;
+
 }
