@@ -1,5 +1,3 @@
-
-
 function BanksController($scope, $http) {
 
 
@@ -10,13 +8,18 @@ function BanksController($scope, $http) {
      |
      */
 
+
+
+
     $http.get('banks/getall').success(function (banks) {
 
             $scope.banks = banks;
 
 
+
         }
     );
+
 
 
     /*
@@ -28,20 +31,22 @@ function BanksController($scope, $http) {
 
     $scope.addBank = function () {
 
-           var bank = { name: $scope.newBank  };
+        var bank = { name: $scope.newBank  };
 
         //save it in the DB
         $http.post('banks', bank).success(function (bank) {
 
-               //push to the banks array
-               $scope.banks.push(bank);
+                //push to the banks array
+                $scope.banks.push(bank);
 
 
-           }
-       );
+            }
+        );
 
         //Erase the newBank field
         $scope.newBank = "";
+
+
 
 
     };
@@ -53,6 +58,7 @@ function BanksController($scope, $http) {
      |
      */
     $scope.deleteBank = function (id) {
+
 
         //Delete from the DB
 
@@ -67,8 +73,55 @@ function BanksController($scope, $http) {
 
             }
         );
-   //Erase the newBank field
+        //Erase the newBank field
         $scope.newBank = "";
+
+
+    };
+
+    /*
+     |--------------------------------------------------------------------------
+     | Edit Bank
+     |--------------------------------------------------------------------------
+     |
+     */
+
+    $scope.editBank = function (id, name) {
+        $scope.loading = true;
+        $scope.newName = name;
+        $scope.id = id;
+
+    };
+
+    /*
+     |--------------------------------------------------------------------------
+     | Update Bank
+     |--------------------------------------------------------------------------
+     |
+     */
+
+    $scope.updateBank = function (bank) {
+
+       var  id = $scope.id;
+        $http.put('banks/' + id  , {"name": bank}).success(function (bank) {
+
+                //Delete from the array
+                for (var i = 0; i < $scope.banks.length; i++)
+                    if ($scope.banks[i].id && $scope.banks[i].id === id) {
+                        $scope.banks.splice(i, 1);
+                        break;
+                    }
+
+                //push to the banks array
+                $scope.banks.push(bank);
+
+
+
+
+            }
+        );
+
+
 
 
     };

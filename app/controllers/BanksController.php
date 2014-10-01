@@ -81,9 +81,15 @@ class BanksController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($companies, $id)
 	{
-		//
+
+
+        $bank = Bank::find($id);
+        $bank->name = Input::get('name');
+        $bank->save();
+        return $bank;
+
 	}
 
 	/**
