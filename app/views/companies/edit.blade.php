@@ -5,7 +5,7 @@
 {{ HTML::script('js/providers/providersForm.js') }}
 
 <div class="col-md-6 col-md-offset-3 centeredTitle Separator">
-    <h1>Información de su Empresa</h1>    
+    <h1>Información de su Empresa</h1>
 </div>
 
 <hr>

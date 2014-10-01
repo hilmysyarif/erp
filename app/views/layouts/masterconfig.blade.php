@@ -58,9 +58,13 @@
 
 
 <div class="container-fluid content">
+
+
     @include('layouts/partials/sidebars/config')
     @include('flash::message')
+    <div class="col-sm-9 col-md-9">
     @yield('content')
+    </div>
 </div>
 <!-- #############/Content##############-->
 

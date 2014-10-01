@@ -45,5 +45,13 @@ class Company extends Eloquent {
     }
 
 
+    public function banks()
+    {
+
+
+        return $this->hasMany('Bank');
+
+    }
+
 
 }

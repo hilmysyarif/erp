@@ -49,6 +49,13 @@ Route::group(['before' => 'auth|!company'], function()
     Route::resource('companies', 'CompaniesController');
     Route::resource('companies.orders', 'OrdersController');
 
+    Route::get('companies/{companies}/banks/getall',
+        [  'as'=>'companies.banks.getall', 'uses' => 'BanksController@getall']);
+
+
+    Route::resource('companies.banks', 'BanksController');
+
+
     Route::get('companies/{companies}/dashboard',
         [  'as'=>'companies.dashboard', 'uses' => 'CompaniesController@dashboard']);
 

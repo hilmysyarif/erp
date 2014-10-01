@@ -1,6 +1,6 @@
 <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar centeredTitle">
-        <li class="active"><a href="#">Bancos</a></li>
+        <li class="active"><a href="{{ URL::route('companies.banks.index',['companies' => Auth::user()->company_id ]) }}">Bancos</a></li>
         <li><a href="#">Bodegas</a></li>
         <li class="dropdown">
             <a id="drop5" role="button" data-toggle="dropdown" href="#">Centros de Costos <span
@@ -30,6 +30,12 @@
             </ul>
         </li>
 
+        <li><a href="#">Cobradores</a></li>
+        <li><a href="#">Códigos de movimientos de Cheques</a></li>
+        <li><a href="#">Cobradores</a></li>
+        <li><a href="#">Códigos de movimientos de Cheques</a></li>
+        <li><a href="#">Cobradores</a></li>
+        <li><a href="#">Códigos de movimientos de Cheques</a></li>
         <li><a href="#">Cobradores</a></li>
         <li><a href="#">Códigos de movimientos de Cheques</a></li>
    </ul>

@@ -31,7 +31,7 @@
 
         "psr-4":{
 
-            "chileagricola\\" : "app/copol"
+            "copol\\" : "app/copol"
 
         }
 	},

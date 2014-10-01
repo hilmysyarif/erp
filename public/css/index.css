@@ -51,15 +51,17 @@
 
 .dropdown-menu {
 
-    
+
     color: white;
 }
 
 .dropdown-menu > li > a {
     background: white !important;
-    color: white;
+    color: rgba(43, 39, 39, 0.65);
     font-size: 13px;
 }
+
+
 
 .dropdown-menu .divider {
     background-color: rgba(229, 229, 229, 0.29);
@@ -67,8 +69,8 @@
 
 .dropdown-menu > li > a:hover {
 
-    color: #6ab000;
-    background-color: #d32d1b
+    color: red;
+    background-color: green
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
@@ -112,6 +114,10 @@
     background-color: #2e2e2e;
 }
 
+.nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+
+    border-color: #d32d1b;
+}
 /* ------------------ JumboTron  ------------------*/
 
 .textojumbo {
@@ -245,15 +251,16 @@ body {
 .btnGreen {
 
     width: 100%;
-    background-color: #d32d1b;
+    height: 50px;
     border-radius: 0px;
+
 
 }
 
 .btnGreen:hover {
 
     width: 100%;
-    background-color: #488864;
+    background-color: #d32d1b;
     border-radius: 0px;
 
 }

@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">ChileAgrícola.org </a>
+            <a class="navbar-brand" href="/">{{Auth::user()->company->fancy_name}} </a>
 
         </div>
 
